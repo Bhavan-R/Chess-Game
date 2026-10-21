@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandmaster Chess | Premium Edition</title>
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- The Chess Board Section -->
+        <main class="board-wrapper">
+            <div id="chess-board" class="board">
+                <!-- 64 squares generated via JS -->
+            </div>
+        </main>
+
+        <!-- Premium Side Panel -->
+        <aside class="ui-panel">
+            <header class="panel-header">
+                <h1>Grandmaster <span class="gold">Chess</span></h1>
+                <div id="turn-indicator" class="turn-badge">White's Turn</div>
+            </header>
+
+            <section class="status-area">
+                <div id="game-status" class="status-msg">Ready to play</div>
+            </section>
+
+            <section class="history-container">
+                <h3>Move History</h3>
+                <div id="move-log" class="move-log">
+                    <!-- SAN moves added here -->
+                </div>
+            </section>
+
+            <footer class="panel-footer">
+                <button id="reset-btn" class="premium-btn">New Game</button>
+            </footer>
+        </aside>
+    </div>
+
+    <!-- Chess.js for game logic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
